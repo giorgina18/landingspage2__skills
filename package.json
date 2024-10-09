@@ -1,0 +1,16 @@
+{
+    "name": "scss-compiler",
+    "version": "1.0.0",
+    "description": "A setup to compile and watch SCSS to a single CSS file",
+    "main": "index.js",
+    "scripts": {
+      "build-css": "sass scss/main.scss css/style.css --style compressed",
+      "watch-css": "sass --watch scss/main.scss:css/style.css --style compressed"
+    },
+    "devDependencies": {
+      "sass": "^1.70.0"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  

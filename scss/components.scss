@@ -1,0 +1,62 @@
+@use 'colors';
+@use 'fonts';
+
+//  call to action button // 
+%cta {
+    width: 10rem;
+    padding: 0, 5rem;
+    font-size: 70%;
+    background: colors.$background-blue;
+    border: none;
+    color: colors.$font-color;
+    height: 4rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+%cta:hover {
+    cursor: pointer;
+    background: colors.$hover-blue;
+    transition: 0.2s;
+}
+
+// default header for sections//
+%header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // padding: 2rem;
+
+}
+
+@media screen and (max-width:1000px) {
+    %header {
+        background: red;
+    }
+
+}
+
+// h2 heading for sections header //
+%h2Handwriting {
+    font-family: fonts.$handwriting;
+    font-size: 250%;
+    color: colors.$font-color;
+    text-align: center;
+}
+
+
+// kenmerken section //
+%section {
+    height: 80rem;
+    border-bottom: 0.2rem solid colors.$over-lightgreen;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+%icon{
+    font-size: 200%;
+    color: colors.$font-color;
+    border: 0.5rem solid colors.$border-lightblue;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
